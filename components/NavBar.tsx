@@ -1,8 +1,8 @@
 "use client"
 
-import { Globe2, Key, LogIn, Search } from "lucide-react"
+import { Globe2,  LogIn, Search } from "lucide-react"
 import Image from "next/image"
-import { useEffect, useRef, useState } from "react"
+import { useState } from "react"
 
 
 export default function Navbar() {

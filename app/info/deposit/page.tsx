@@ -85,7 +85,6 @@ const DepositPage = () => {
                 className="w-[350px] border border-gray-300 rounded-md p-6 bg-white shadow-sm hover:shadow-lg transition"
               >
                 <h2 className="font-semibold text-taupe-950">{box.title}</h2>
-                <h3 className=" font-normal mb-2 text-gray-600 ">{box.headline}</h3>
 
                 <p className="text-gray-700 leading-7 mb-3">{box.parag1}</p>
                 <p className="text-gray-700 leading-7 mb-3">{box.parag2}</p>
