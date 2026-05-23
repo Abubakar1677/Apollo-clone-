@@ -35,7 +35,7 @@ const AboutUs = () => {
              What is Apollo?
           </h1>
               <p className='mt-2'>
-              Apollo is the institutional repository of the <a href='#'  className='text-[#1c617c] hover:underline hover:text-[#124154]'>University of Cambridge.</a> It was established
+              Apollo is the institutional repository of the <a href='https://www.cam.ac.uk/' target='_blank'  className='text-[#1c617c] hover:underline hover:text-[#124154]'>University of Cambridge.</a> It was established
               in 2003 as a service to share the research outputs of the University. The Repository is 
               committed to store and preserve the University’s research outputs. Research outputs can
                 include, but are not limited to, publications, conference proceedings, book chapters, 
@@ -43,14 +43,14 @@ const AboutUs = () => {
                 computational scripts, code, images etc.), presentations and others. 
               </p>
               <p className='mt-2'>
-                As outlined in <a href='#'  className='text-[#1c617c] hover:underline hover:text-[#124154]'>Apollo’s terms of use,</a> the Repository is responsible for the curation of 
+                As outlined in <a href='/info/termsOfUse' target='_blank'  className='text-[#1c617c] hover:underline hover:text-[#124154]'>Apollo’s terms of use,</a> the Repository is responsible for the curation of 
                 deposited research outputs, as well as for storing and sharing those outputs according to 
-                the guidelines of research funders and abiding to principles and recommendations from <a href='#'  className='text-[#1c617c] hover:underline hover:text-[#124154]'>Cambridge 
+                the guidelines of research funders and abiding to principles and recommendations from <a href='https://doi.org/10.17863/CAM.71114'  target='_blank' className='text-[#1c617c] hover:underline hover:text-[#124154]'>Cambridge 
                 University Library’s (CUL) Digital Preservation Policy.</a>  Apollo underpins the commitment of the
                  University of Cambridge to preserve for the long-term and provide access to its research 
                  as widely as possible in order to contribute to society as well as to academic advancement. 
                  Its primary focus is on providing open access to the University’s research publications. 
-                 For further information, see the relevant  <a href='#'  className='text-[#1c617c] hover:underline hover:text-[#124154]'>Open Access pages.</a> 
+                 For further information, see the relevant  <a href='https://www.openaccess.cam.ac.uk/' target='_blank'  className='text-[#1c617c] hover:underline hover:text-[#124154]'>Open Access pages.</a> 
               </p>
       </div>
 
@@ -69,7 +69,7 @@ const AboutUs = () => {
 
       <div>
          <h1 className="text-2xl font-serif mt-2 mb-2">Governance and policies</h1>
-          <p>Our <a href='#'  className='text-[#1c617c] hover:underline hover:text-[#124154]'>Governance and Policies </a> page contains further information on the governance structure and relevant policies. </p>
+          <p>Our <a href='/info/govtPolicy'  className='text-[#1c617c] hover:underline hover:text-[#124154]'>Governance and Policies </a> page contains further information on the governance structure and relevant policies. </p>
             <div className='mt-4'>
                 {faqs.map((faq, index) => (
                   <div
@@ -106,7 +106,7 @@ const AboutUs = () => {
             <ul className="list-disc pl-6  leading-7">
               <li>
                 <a
-                  href="#"
+                  href="/info/contact"
                   className="text-[#1c617c] hover:text-[#124154] hover:underline"
                 >
                   Contact us
@@ -115,7 +115,7 @@ const AboutUs = () => {
 
               <li>
                 <a
-                  href="#"
+                  href="/info/govtPolicy"
                   className="text-[#1c617c] hover:text-[#124154] hover:underline"
                 >
                   Apollo policies and governance
@@ -127,7 +127,7 @@ const AboutUs = () => {
               <div className="ml-4 mt-1">
                 <li>
                   <a
-                    href="#"
+                    href="https://v2.sherpa.ac.uk/id/repository/109"
                     className="text-[#1c617c] hover:text-[#124154] hover:underline"
                   >
                     Apollo record at the OpenDOAR directory
@@ -146,7 +146,8 @@ const AboutUs = () => {
 
                 <li>
                   <a
-                    href="#"
+                    href="https://doi.org/10.25504/FAIRsharing.38c26a"
+                    target='_blank'
                     className="text-[#1c617c] hover:text-[#124154] hover:underline"
                   >
                     Apollo record at Fairsharing.org
@@ -175,7 +176,7 @@ const AboutUs = () => {
             <ul className="list-disc pl-6 text-[17px] leading-7">
               <li>
                 <a
-                  href="#"
+                  href="/info/preserv"
                   className="text-[#1c617c] hover:text-[#124154] hover:underline"
                 >
                   Apollo repository preservation policy
@@ -184,7 +185,7 @@ const AboutUs = () => {
 
               <li>
                 <a
-                  href="#"
+                  href="/info/termsOfuse"
                   className="text-[#1c617c] hover:text-[#124154] hover:underline"
                 >
                   Terms of use
@@ -202,7 +203,7 @@ const AboutUs = () => {
 
               <li>
                 <a
-                  href="#"
+                  href="/info/doiPolicy"
                   className="text-[#1c617c] hover:text-[#124154] hover:underline"
                 >
                   DOI policy
@@ -211,7 +212,7 @@ const AboutUs = () => {
 
               <li>
                 <a
-                  href="#"
+                  href="/info/serviceLab"
                   className="text-[#1c617c] hover:text-[#124154] hover:underline"
                 >
                   Apollo repository service level
@@ -229,7 +230,8 @@ const AboutUs = () => {
             <ul className="list-disc pl-6 text-[17px] leading-7">
               <li>
                 <a
-                  href="#"
+                  href="https://www.cam.ac.uk/"
+                  target='_blank'
                   className="text-[#1c617c] hover:text-[#124154] hover:underline"
                 >
                   University of Cambridge
@@ -238,7 +240,8 @@ const AboutUs = () => {
 
               <li>
                 <a
-                  href="#"
+                  href="https://www.lib.cam.ac.uk/"
+                  target='_blank'
                   className="text-[#1c617c] hover:text-[#124154] hover:underline"
                 >
                   Cambridge University Library
@@ -247,7 +250,7 @@ const AboutUs = () => {
 
               <li>
                 <a
-                  href="#"
+                  href="https://osc.cam.ac.uk/"
                   className="text-[#1c617c] hover:text-[#124154] hover:underline"
                 >
                   Open Research
@@ -256,7 +259,7 @@ const AboutUs = () => {
 
               <li>
                 <a
-                  href="#"
+                  href="/info/govtPolicy"
                   className="text-[#1c617c] hover:text-[#124154] hover:underline"
                 >
                   Open Research Systems

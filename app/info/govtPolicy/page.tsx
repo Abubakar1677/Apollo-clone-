@@ -8,7 +8,8 @@ const GovtPolicy = () => {
       headline:"Apollo repository digital preservation policy",
       parag1: "An overview of Apollo's digital preservation policy outlining how research outputs deposited in the repository are managed and preserved is publicly available. ",
       parag2:"This policy is part of a wider digital preservation policy for Cambridge University Libraries. ",
-      link: "Apollo preservation page",
+      linktext: "Apollo preservation page",
+      href:"/info/preserv"
      
     },
     {
@@ -16,7 +17,8 @@ const GovtPolicy = () => {
       headline:"CUL digital preservation policy",
       parag1: " Cambridge University Libraries (CUL) wider Digital Preservation Policy outlines the approaches to preserving digital collection materials held by Cambridge University Libraries.",
       parag2:"These policies sit within a broad policy landscape determined by Cambridge University Library, the University of Cambridge, the higher education sector, research funders, UK Government etc. ",
-      link: "CUL digital preservation policy",
+      linktext: "CUL digital preservation policy",
+       href:"https://doi.org/10.17863/CAM.71114"
      
     },
    
@@ -26,30 +28,28 @@ const GovtPolicy = () => {
       headline:"Persistent identifiers in Apollo",
       parag1: " Qualifying material deposited in Apollo may be assigned a persistent identifier in the form of a Digital Object Identifier (DOI).  ",
       parag2:"This policy outlines the criteria by which material is assessed - both in terms of the full text content and the associated metadata - and how requests to update material once a DOI has been granted are handled.  ",
-      link: "DOI policy",
+      linktext: "DOI policy",
+       href:"/info/doiPolicy"
     },
     {
       title: "Repository service level",
-      // headline:"Apollo repository digital preservation policy",
       parag1: "The service level definition for Apollo, the University of Cambridge institutional repository.  ",
-      // parag2:"This policy is part of a wider digital preservation policy for Cambridge University Libraries. ",
-      link: "Service level definition",
+      linktext: "Service level definition",
+       href:"/info/serviceLab"
      
     },
     {
       title: "Repository Terms of Use",
-      // headline:"Apollo repository digital preservation policy",
       parag1: "The Repository Terms of Use (Terms of Use) forms the framework that determines how members of the University and the community of end-users interact with Apollo.  ",
-      // parag2:"This policy is part of a wider digital preservation policy for Cambridge University Libraries. ",
-      link: "Repository Terms of Use",
+      linktext: "Repository Terms of Use",
+       href:"/info/termsOfUse"
      
     },
     {
-       title: "Repository preservation",
-      // headline:"Apollo repository digital preservation policy",
+       title: "Notice and takedown policy",
       parag1: "Outlines the process by which parties who feel that material deposited in Apollo infringes their rights may act.  ",
-      // parag2:"This policy is part of a wider digital preservation policy for Cambridge University Libraries. ",
-      link: "Notice and takedown policy",
+      linktext: "Notice and takedown policy",
+       href:"/info/preserv"
     },
   ]
   return (
@@ -60,7 +60,7 @@ const GovtPolicy = () => {
                 </h1>
                     <p className='mt-2'>
                     The ORS team is part of the Digital Iniatives Directorate (Digital Initiatives) 
-                    within <a href='#'  className='text-[#1c617c] hover:underline hover:text-[#124154]'>Cambridge University Library</a> . 
+                    within <a href='https://www.lib.cam.ac.uk/' target='_blank'  className='text-[#1c617c] hover:underline hover:text-[#124154]'>Cambridge University Library</a> . 
                     The ORS team is responsible for managing Apollo (Repository service and technical aspects of the underpinning 
                     software platform), and its integrations with other University systems.
                     </p>
@@ -84,14 +84,14 @@ const GovtPolicy = () => {
                      storage servers based in the Universitys two data centres. 
                     </p>
                     <p className='mt-4'>
-                        The data centres are the responsibility of <a href='#'  className='text-[#1c617c] hover:underline hover:text-[#124154]'>University Information Services (UIS).</a>    
+                        The data centres are the responsibility of <a href='https://www.uis.cam.ac.uk/' target='_blank'  className='text-[#1c617c] hover:underline hover:text-[#124154]'>University Information Services (UIS).</a>    
                     </p>
                    
                     <h1 className="text-2xl font-serif text-black ">
                         Content
                     </h1>
                     <p className='mt-2'>
-                        Teams within the  <a className='text-[#1c617c] hover:underline hover:text-[#124154]'>Office of Scholarly Communication</a> manage
+                        Teams within the  <a href='https://osc.cam.ac.uk/' target='_blank' className='text-[#1c617c] hover:underline hover:text-[#124154]'>Office of Scholarly Communication</a> manage
                          and curate the repositorys content. Open access submissions, research datasets and doctoral theses are primarily deposited into 
                          Apollo via the Universitys CRIS (Current Research Information System), which is owned by the Research Information Office. 
                     
@@ -103,8 +103,8 @@ const GovtPolicy = () => {
                 </h1>
                     <p className='mt-2'>
                         The ORS team report directly to the Head of Digital Initiatives, who is themselves a Deputy Director of Cambridge University
-                        Library and part of the Senior Leadership Team. The Senior Leadership Team form part of the <a href='#'  className='text-[#1c617c] hover:underline hover:text-[#124154]'>governance structure of the Library.</a>  
-                   
+                        Library and part of the Senior Leadership Team. The <a href=' https://www.lib.cam.ac.uk/about-library/library-management/senior-leadership-team' target='_blank'  className='text-[#1c617c] hover:underline hover:text-[#124154]'>Senior Leadership </a>Team form part of the <a href='https://www.lib.cam.ac.uk/about-library/library-management' target='_blank'  className='text-[#1c617c] hover:underline hover:text-[#124154]'>governance structure of the Library.</a>  
+                  
                     </p>
 
                     
@@ -149,10 +149,10 @@ const GovtPolicy = () => {
                 
 
                 <a
-                  href="#"
+                  href={box.href}
                   className="text-sky-700 font-medium hover:underline"
                 >
-                  {box.link}
+                  {box.linktext}
                 </a>
               </div>
             ))}

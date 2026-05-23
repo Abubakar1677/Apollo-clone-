@@ -8,23 +8,26 @@ export default function Home() {
     {
       title: "How to deposit",
       desc: "Detailed information about deposit processes into Apollo, including eligibility for inclusion in Apollo.",
-      link: "How to deposit page",
+      linktext: "How to deposit page",
+      href:"/info/deposit",
       desc2:"Recent submissions",
       logo2:"/cam-col-logo.jpeg"
     },
     {
       title: "Data reuse",
       desc: "Information on how to discover, reuse and cite data in Apollo.",
-      link: "Data reuse page",
-       desc2:"Research data and Softwares",
+      linktext: "Data reuse page",
+      href:"/info/dataReuse",
+      desc2:"Research data and Softwares",
        logo2:"/research-data.jpeg"
      
     },
     {
       title: "Governance",
       desc: "Detailed information about repository governance and an outline of key relevant policies. ",
-      link: "Governance and policies page",
-       desc2:"Theses",
+      linktext: "Governance and policies page",
+      href:"/info/govtPolicy",
+      desc2:"Theses",
        logo2:"/theses-col-logo.jpeg"
     },
   ]
@@ -60,10 +63,10 @@ export default function Home() {
                 </p>
 
                 <a
-                  href="#"
+                  href={box.href}
                   className="text-sky-700 font-medium hover:underline"
                 >
-                  {box.link}
+                  {box.linktext}
                 </a>
               </div>
             ))}
